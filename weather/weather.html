@@ -2,20 +2,77 @@
 <html lang="en-us">
  <head>
   <meta charset="UTF-8">
-  <title>Weather Site Plan</title>
-  <meta name="description" content="Short Description of the page.">
+  <title>Weather Site Plan | Weather App</title>
+  <meta name="description" content="Easy weather app for all">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" link href="JSscript/weather.json" media="screen">
  </head>
  <body>
         <header>
                 <h1>Weather Site Plan</h1>
                </header>
                <nav>
-                <a href="#">Home</a>
-                <a href="#">F</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Franklin Weather</a></li>
+                </ul>
                </nav>
+            </header>
                <main>
-               
+                   <h2>Purpose</h2>
+                     <p>The client would like a web based weather app created. The purpose is to give current weather conditions in 3 different ways. The initial landing page will give the weather for the current location based on the Geocoding information given by the browser. The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location by a search string. </p>
+                     <h3>Audience</h3>
+                     <p>Primary audience is adults ages 18-30. Most will be students. Access to the site will be split between mobile devices and laptops. A secondary audience will be anyone interested in weather.</p>
+                     <h3>Audience Goals</h3>
+                     <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well. The third goal deals with planning for travels. The ability to get weather conditions for any location will help with last minute packing for road trips.</p>
+                     <h3>Persona</h3>
+                     <img src="/images/cool-joe.jpg" alt="Joe Cool">
+                     <ul>
+                         <li><b>Name:</b>Joe Cool</li>
+                         <li><b>Occupation:</b>Student</li>
+                         <li><b>Age:</b>Eternaly 18</li>
+                         <li><b>Interests:</b>Traveling, seeing new things</li>
+                         <li><b>Motivation:</b>Joe is not into planning. His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure, has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow). He would like to be more prepared... without having to put much effort into it... or planning.</li>
+                         <li><b>Environment:</b>Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however. Many of the places he frequents do not have great signal... he is often dealing with 3G speeds. </li>
+                     </ul>
+                     <h2>Content</h2>
+                     <p>All weather pages should include Location name, temperature, high, low, current weather descriptor, precipitation, and wind on small, and hourly temps should be added on larger screens. (See provided weather data file for more details)</p>
+                     <h3>Pages</h3>
+                     <ol>
+                         <li><b>Home:</b>Weather for the current location. Current location should be determined by using the Geolocation API of the browser. This information should be passed to the WeatherUnderground API (<a href="https://www.wunderground.com/weather/api/">https://www.wunderground.com/weather/api/</a>) to retrieve the current conditions.</li>
+                         <li><b>Franklin, Greenville, Springfield:</b>Weather for each specific location. The weather for The Franklin and Greenville pages should be pulled from a local JSON file that will be provided.</li>
+                         <li><b>Search</b>Begins with only a search box, characters entered will cause a list of suggested matches to appear. Selected location will pull up the weather. The search term from the field should be sent to the WeatherUnderground autocomplete API (<a href="">https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1/</a>), and the results used to pull the current conditions for the selected location.</li>
+                     </ol>
+                     <h2>Styles</h2>
+                     <h4>Branding</h4>
+                        <p>The client provided the followin initial concept for a name and logo: (You recogninze that this logo could easily be recreated entirely with CSS using the right font and HTML entities.) 
+                         <img src=""  >
+                    <h3>Typography</h3>
+                    <p> The client also expressed interest in the following fonts:<br></p>
+                        <b>Heading Font:</b> <a href="">Sansita</a> From Google Fonts<br>
+                        <img src="" alt="Sansita Font Alphabet"><br>
+                         <br> Body Copy Font:</b> Helvetica<br>
+                         <p style="font-family: helvetica, sans-serif;">   </p>
+                         <p style="font-family: helvetica, sans-serif;">   </p>
+                         <h3>Colors</h3>
+                            <table style="border: 1px solid black;">
+                            <tr>
+                                <td><img src="" >   </td>  
+                                <td><img src="" >   </td> 
+                                <td><img src="" >   </td> 
+                                <td><img src="" >   </td> 
+                            </tr>
+                            <tr>
+                                <td>Primary: #A6D8DB</td>
+                                <td>Secondary: #F07C6C</td>
+                                <td>Accent1: #E7EF61</td>
+                                <td>Accent2: #47556F</td>
+                            </tr>
+                        </table>
+
+                        
+
+
                </main>
                <footer>
                 &copy;2018 Your name here
