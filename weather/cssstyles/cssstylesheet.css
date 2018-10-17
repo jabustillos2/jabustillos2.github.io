@@ -13,3 +13,9 @@
 *  4.  Large Screen Styles (Media Queries begin here)
 *
 * ****************************** */
+
+
+/*noramilize css will be imported*/
+"@import "
+/*google font sansita import*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
