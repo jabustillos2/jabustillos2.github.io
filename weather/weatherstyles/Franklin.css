@@ -3,12 +3,10 @@
 *  Created by: Put your name here
 *  
 *  1.  Includes (fonts and supplementary stylesheets)
-*  1.1 Normalize*/
-@import url('normalize.css');
-/*  1.2 Google fonts*/
-@import url('https://fonts.googleapis.com/css?family=Sansita');
+*  1.1 Normalize*
+*  1.2 Google fonts*
 
-/*  2.  General Styles (for all pages and devices)
+*  2.  General Styles (for all pages and devices)
 *
 *  3.  Mobile First (styles specific to small screens)
 *
@@ -18,5 +16,6 @@
 
 
 /*noramilize css will be imported*/
-
+@import url('normalize.css');
 /*google font sansita import*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
