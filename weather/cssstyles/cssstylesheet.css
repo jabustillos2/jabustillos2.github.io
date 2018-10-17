@@ -16,6 +16,6 @@
 
 
 /*noramilize css will be imported*/
-"@import "
+@import url('normalize.css');
 /*google font sansita import*/
 @import url('https://fonts.googleapis.com/css?family=Sansita');
