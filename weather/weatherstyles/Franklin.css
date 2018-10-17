@@ -4,18 +4,25 @@
 *  
 *  1.  Includes (fonts and supplementary stylesheets)
 *  1.1 Normalize*
-*  1.2 Google fonts*
+/*noramilize css will be imported*/
+@import url('normalize.css');
+/*google font sansita import*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+/*  1.2 Google fonts*
 
-*  2.  General Styles (for all pages and devices)
-*
-*  3.  Mobile First (styles specific to small screens)
+*  2.  General Styles (for all pages and devices)*/
+h1,h2,h3,h4,h5,h6{
+    font-family: sansita, sans-serif;
+  }
+
+  body{
+      font-family: helvetica, sans-serif;
+    }
+/*  3.  Mobile First (styles specific to small screens)
 *
 *  4.  Large Screen Styles (Media Queries begin here)
 *
 * ****************************** */
 
 
-/*noramilize css will be imported*/
-@import url('normalize.css');
-/*google font sansita import*/
-@import url('https://fonts.googleapis.com/css?family=Sansita');
+
