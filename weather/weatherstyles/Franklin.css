@@ -11,13 +11,20 @@
 /*  1.2 Google fonts*
 
 *  2.  General Styles (for all pages and devices)*/
-h1,h2,h3,h4,h5,h6{
-    font-family: sansita, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: sansita, Eurostyle, sans-serif;
   }
-
   body{
-      font-family: helvetica, sans-serif;
-    }
+    font-family: helvetica, verdana, sans-serif;
+    font-size: 20px;
+  }
+    html {
+        box-sizing: border-box;
+       }
+       
+       *, *:before, *:after{
+        box-sizing: inherit;
+       }
 /*  3.  Mobile First (styles specific to small screens)
 */
 
