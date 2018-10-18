@@ -27,7 +27,23 @@ h1,h2,h3,h4,h5,h6 {
        }
 /*  3.  Mobile First (styles specific to small screens)
 */
-
+nav ul li { 
+    display: inline-block; 
+    list-style: none; 
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  footer{
+    margin-bottom: 2em;
+   }
+   #site-brand {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
 * ****************************** */
