@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 /*  3.  Mobile First (styles specific to small screens)
 */
 .tile{
+  text-align: center
   background-color: rgba(200,200,200,.6);
   margin: .2em auto;
   border: 1px solid;
