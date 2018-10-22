@@ -72,6 +72,10 @@ footer{
   font-size: 5em;
   margin: 0px;
 }
+
+#hourly{
+  font-family: sansita, Eurostyle, sans-serif;
+}
   
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
