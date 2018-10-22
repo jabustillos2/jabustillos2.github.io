@@ -20,29 +20,47 @@ h1,h2,h3,h4,h5,h6 {
   }    
 /*  3.  Mobile First (styles specific to small screens)
 */
-.tile{
-  text-align: center;
+nav ul li { 
+  display: inline-block; 
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer{
+  margin-bottom: 3em;
+ }
+
+ #locInfo>p{
+    text-align: justify;
+    font-size: 0.9em;
+ }
+
+ .tile{
   background-color: rgba(200,200,200,.6);
   margin: .2em auto;
   border: 1px solid;
-  border-radius: 10px;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
 }
-nav ul li { 
-    display: inline-block; 
-    list-style: none; 
-  }
-  nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
-  footer{
-    margin-bottom: 2em;
-   }
-   #site-brand {
-    font-size: 2em;
-    font-weight: 600;
-  }
+
+.hide{
+    display:none;
+}
+
+#curWeather{
+  text-align: center;
+}
+
+#dailyTemp{
+  font-size: 5em;
+  margin: 0px;
+}
   
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
