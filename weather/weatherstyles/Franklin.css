@@ -17,16 +17,7 @@ h1,h2,h3,h4,h5,h6 {
   body{
     font-family: helvetica, verdana, sans-serif;
     font-size: 20px;
-  }
-    html {
-        box-sizing: border-box;
-        border: 5px solid black;
-        float: center;
-       }
-       
-       *, *:before, *:after{
-        box-sizing: inherit;
-       }
+  }    
 /*  3.  Mobile First (styles specific to small screens)
 */
 .tile{
