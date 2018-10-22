@@ -23,74 +23,60 @@
                 </nav>
         </header>
                <main>
-                  <section class="left_bar">
-                          <div class="current_title">
-                                <h2>Zip: 83237 | Elevation: 4501 ft. | Location: 42.0135, 111.8072</h2>
+                       <h1 id ="locName"></h1>
+                  <section class="locName">
+                                <p>Zip: 83237 | Elevation: 4968 ft. | Location 42.07, 111.79</p>
                                 </section>
                           
-                          <div>
-                          <section id="state" class="tile">
-                                  <h2>City: Franklin</h2>
-                                  <p>State: Idaho</p>
+                                <div id="curWeather">
+                    
+                                <section id="temps" class="tile">
+                                    <h3 class="hide">Temperature</h3>
+                                    <p id="dailyTemp">55° F</p>
+                                    <p>64° F 41° F</p> <!-- change color to red and blue-->
                                 </section>
-                          
-                          <section id="wind" class="tile">
-                                  <h3>Wind</h3>
-                                        <p>1-5 MPH SouthWest</p>
+            
+                                <section id="wind" class="tile">
+                                    <h3 class="hide"> Wind</h3>
+                                    <p>Direction: SW</p> 
+                                    <p>Gusts: 5mph</p>
                                 </section>
-                          
-                          <section id="temps" class="tile">
-                                  <h3>Temperature</h3>
-                                  <p>0 in</p>                                
+            
+                                <section id="summary" class="tile">
+                                    <h3>Sunny</h3>
                                 </section>
-                         
-                          </div>
-                          <div>
-                          <section id ="longitude" class="tile">
-                                  <h4>Longitude: </h4>111.8072
-                                </section>
-                          <section id="latitude" class="tile">
-                                  <h4>Latitude: </h4>42.0135
-                                </section>
-                          <section id="elevation" class="tile">
-                                  <h4>Elevation: </h4>4,968 feet
-                                  </section>
-                          <section id="zip" class="tile">
-                                  <h4>Zip: </h4>83237
-                                  </section>
-                          </div>
-                  </section>
+                            </div>
 
-                  <section class="right_bar">
-                          <h2>Hourly Forecast</h2>
-                                <ul>
-                                        <li>0:00 AM : 41</li>
-                                        <li>1:00 AM : 41</li>
-                                        <li>2:00 AM : 41</li>
-                                        <li>3:00 AM : 41</li>
-                                        <li>4:00 AM : 41</li>
-                                        <li>5:00 AM : 41</li>
-                                        <li>6:00 AM : 42</li>
-                                        <li>7:00 AM : 44</li>
-                                        <li>8:00 AM : 44</li>
-                                        <li>9:00 AM : 46</li>
-                                        <li>10:00 AM : 49</li>
-                                        <li>11:00 AM : 51</li>
-                                        <li>12:00 AM : 55</li>
-                                        <li>13:00 AM : 58</li>
-                                        <li>14:00 AM : 62</li>
-                                        <li>15:00 AM : 64</li>
-                                        <li>16:00 AM : 64</li>
-                                        <li>17:00 AM : 62</li>
-                                        <li>18:00 AM : 61</li>
-                                        <li>19:00 AM : 60</li>
-                                        <li>20:00 AM : 59</li>
-                                        <li>21:00 AM : 58</li>
-                                        <li>22:00 AM : 52</li>
-                                        <li>23:00 AM : 48</li>
-                                </ul>
-                  </section>
 
+            <section id="hourly">
+                        <h4>Hourly Forecast</h4>
+                            <ul>
+                                <li>12:00 AM : 41</li>
+                                <li>1:00 AM : 41</li>
+                                <li>2:00 AM : 41</li>
+                                <li>3:00 AM : 41</li>
+                                <li>4:00 AM : 41</li>
+                                <li>5:00 AM : 41</li>
+                                <li>6:00 AM : 42</li>
+                                <li>7:00 AM : 44</li>
+                                <li>8:00 AM : 44</li>
+                                <li>9:00 AM : 46</li>
+                                <li>10:00 AM : 49</li>
+                                <li>11:00 AM : 51</li>
+                                <li>12:00 PM : 55</li>
+                                <li>1:00 PM : 58</li>
+                                <li>2:00 PM : 62</li>
+                                <li>3:00 PM : 64</li>
+                                <li>4:00 PM : 64</li>
+                                <li>5:00 PM : 62</li>
+                                <li>6:00 PM : 61</li>
+                                <li>7:00 PM : 60</li>
+                                <li>8:00 PM : 59</li>
+                                <li>9:00 PM : 58</li>
+                                <li>10:00 PM : 52</li>
+                                <li>11:00 PM : 48</li>                             
+                            </ul>
+                    </section> 
                 </main>
                <footer>
                         <h5>&copy;2018 Weather Site</h5>
