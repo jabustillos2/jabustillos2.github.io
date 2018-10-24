@@ -6,7 +6,7 @@
        display: flex;
        justify-content: space-around;
 }
-ul li{
+nav ul{
     display:flex;
     justify-content: space-around;
 }
