@@ -6,5 +6,9 @@
        display: flex;
        justify-content: space-around;
 }
+ul li{
+    display:flex;
+    justify-content: space-around;
+}
 }
 
