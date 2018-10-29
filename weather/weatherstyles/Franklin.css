@@ -78,6 +78,12 @@ footer{
   font-size: 5em;
   margin: 0px;
 }
+#redfont{
+  color: red
+}
+#bluefont{
+  color: blue
+}
 
 #hourly{
   font-family: sansita, Eurostyle, sans-serif;
