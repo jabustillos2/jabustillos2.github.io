@@ -121,6 +121,7 @@ nav{
 section ul{
   flex-direction: row;
 }
+/*hr scroll bar*/
 #hourly li{
     flex-shrink: 0;
     border-right: 1px solid blue;
@@ -138,6 +139,7 @@ section ul{
     padding:0;
     list-style-type: none;
 }
+/*end scroll bar*/
 }
 
 
