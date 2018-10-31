@@ -121,7 +121,23 @@ nav{
 section ul{
   flex-direction: row;
 }
-
+#hourly li{
+    flex-shrink: 0;
+    border-right: 1px solid blue;
+    padding: 0 10px;
+}
+#hourly li:last-child{
+    border-right:none;
+}
+#hourly ul{
+    display:flex;
+    flex-wrap: nowrap;
+    width: 100px;
+    background-color: beige;
+    overflow-x: auto;
+    padding:0;
+    list-style-type: none;
+}
 }
 
 
