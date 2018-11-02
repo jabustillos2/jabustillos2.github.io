@@ -93,6 +93,7 @@ footer{
 
 #hourly{
   font-family: sansita, Eurostyle, sans-serif;
+  text-align: center;
 }
 section ul{
   display:flex;
@@ -118,7 +119,7 @@ section ul li{
   overflow-x: auto;
   padding:0;
   list-style-type: none;
-  text-align: center;
+
 }
 
 
@@ -157,7 +158,7 @@ section ul{
     overflow-x: auto;
     padding:0;
     list-style-type: none;
-    text-align: center;
+    
 }
 /*end scroll bar*/
 }
