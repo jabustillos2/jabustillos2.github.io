@@ -154,7 +154,7 @@ section ul{
 #hourly ul{
     display:flex;
     flex-wrap: nowrap;
-    width: 100px;
+    width: 100%;
     background-color: beige;
     overflow-x: auto;
     padding:10px;
