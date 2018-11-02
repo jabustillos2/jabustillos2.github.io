@@ -102,28 +102,6 @@ section ul{
 section ul li{
   list-style: none;
 }
-#hourly li{
-  flex-shrink: 0;
-  border-right: 1px solid blue;
-  padding: 0 10px;
-  
-}
-#hourly li:last-child{
-  border-right:none;
-}
-#hourly ul{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100px;
-  background-color: beige;
-  overflow-x: auto;
-  padding:10px;
-  list-style-type: none;
-  
-}
-
-
 
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
