@@ -33,6 +33,27 @@ h1,h2,h3,h4,h5,h6 {
   .bold{
     font-weight: bold
   }
+  #hourly{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 15px;
+    margin-top: 15pxx;
+  }
+  #hourly ul{
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  #hourly li{
+    flex-shrink: 0;
+    border-right: 1px solid blue;
+    padding: 0 5px;
+  }
+  #hourly li: :last-child{
+    border-right: none;
+  }
 /*  3.  Mobile First (styles specific to small screens)
 */
 nav {
