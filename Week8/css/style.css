@@ -52,6 +52,12 @@ h1 {
 .page-header {
 	display: flex;
 	justify-content: space-between
+	width: 100%;
+	height: 200;
+	background-image: url(/Week8/images/looking_downSm50\ 2.jpg);
+	background-repeat: no-repeat;
+	background-position: right,left;
+	background-size: 100%;
 }
 
 
@@ -173,7 +179,14 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {}
+	.page-header {
+		width: 100%;
+		height: 200;
+		background-image: url(/Week8/images/looking_downMd800\ 2.jpg);
+		background-repeat: no-repeat;
+		background-position: right,left;
+		background-size: 100%;
+	}
 	.page-nav {
 		position: relative;
 	}
