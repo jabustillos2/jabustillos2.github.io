@@ -1,7 +1,7 @@
 /********************************
 * Default Styles - Mobile First
 ********************************/
-.Lg {
+.Md {
     display:none;
 }
 
@@ -15,7 +15,7 @@
         display:none;
     }
 
-    .Lg {
+    .Md {
         display:block;
     }
 
