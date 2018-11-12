@@ -61,7 +61,7 @@ list-style-type: none;
 }
 #wind {
   background-image: url(/Week8/weather-images/wind-pointer.png);
-  background-size: 50%; 
+  background-size: 100%; 
   background-repeat: no-repeat;
   background-position: center;
 }
