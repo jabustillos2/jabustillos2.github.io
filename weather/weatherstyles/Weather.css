@@ -59,7 +59,12 @@ list-style-type: none;
 #hourly li:last-child{
   border-right: none;
 }
-
+#wind {
+  background-image: url(/Week8/weather-images/wind-pointer.png);
+  background-size: 50%; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /* 3. Mobile First Rules */
 nav {
@@ -96,7 +101,7 @@ flex-direction: column;
 }
 
 .tile{
-background-color: rgba(200,200,200,.6);
+background-color: rgba(128, 154, 184, 0.6);
 margin: .2em auto;
 border: 1px solid;
 border-radius: 15px;
