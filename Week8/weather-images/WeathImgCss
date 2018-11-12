@@ -1,0 +1,22 @@
+/********************************
+* Default Styles - Mobile First
+********************************/
+.large-images {
+    display:none;
+}
+
+/********************************
+* Large Screen Styles
+* 1200px viewport / 18px font = 66.7em
+********************************/
+
+@media screen and (min-width: 750px) {
+    .small-images {
+        display:none;
+    }
+
+    .large-images {
+        display:block;
+    }
+
+}
