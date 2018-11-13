@@ -59,12 +59,7 @@ list-style-type: none;
 #hourly li:last-child{
   border-right: none;
 }
-#wind {
-  background-image: url(/Week8/weather-images/wind-pointer.png);
-  background-size: 100%; 
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 /* 3. Mobile First Rules */
 nav {
@@ -125,6 +120,12 @@ color: red;
 #blueFont{
 color: blue;
 }
+#wind {
+  background-image: url(/Week8/weather-images/wind-pointer.png);
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
@@ -169,6 +170,12 @@ color: blue;
     .tile{
       height: 350px;
       width: 350px;
+    }
+    #wind {
+      background-image: url(/Week8/weather-images/wind-pointer.png);
+      background-size: 70%; 
+      background-repeat: no-repeat;
+      background-position: center;
     }
 /*end scroll bar*/
 }
