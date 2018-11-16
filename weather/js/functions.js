@@ -2,13 +2,14 @@
 *  Weather Site JavaScript Functions
 ************************************* */
 
-console.log('My javascript is being read.');
-
-
+/* variables for function use*/
+const temp = 31;
+const speed = 5;
+buildWC(speed,temp);
 /* calculate windchill*/
 
 function buildWC(speed, temp) {
-    const dailyTemp = document.getElementById('dailyTemp');
+    const feelTemp = document.getElementById('feelTemp');
 
     /*compute Windchill*/
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -24,5 +25,5 @@ wc = (wc > temp)?temp:wc;
 console.log(wc);
 
 /* wc='feels like ' + wc+'F';*/
-dailyTemp.innerHTML = wc;
+feelTemp.innerHTML = wc;
 }
