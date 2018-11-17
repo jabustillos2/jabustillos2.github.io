@@ -65,6 +65,14 @@ list-style-type: none;
   background-repeat: no-repeat;
   background-position: center;
 }
+#dial {
+  height: 150px;
+  width: 150px;
+  background: no-repeat center/85% url('/Week8/weather-images/wind-pointer.png');
+  z-index: 100;
+  margin: -.6em auto 0;
+  transform: rotate(90deg);
+ }
 
 
 
