@@ -59,21 +59,47 @@ list-style-type: none;
 #hourly li:last-child{
   border-right: none;
 }
-#wind {
-  background-image: url(/Week8/weather-images/wind-pointer.png);
-  background-size: 100%; 
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 #dial {
   height: 150px;
   width: 150px;
   background: no-repeat center/85% url('/Week8/weather-images/wind-pointer.png');
   z-index: 100;
   margin: -.6em auto 0;
-  transform: rotate(90deg);
+  margin-bottom: -80px;
  }
+ .n {
+   transform: rotate(0deg);
+ }
+ .ne{
+   transform: rotate(45deg);
+ }
+ .e{
+  transform: rotate(90deg);
+}
 
+.se{
+  transform: rotate(135deg);
+}
+
+.s{
+  transform: rotate(180deg);
+}
+
+.sw{
+  transform: rotate(225deg);
+}
+
+.w{
+  transform: rotate(270deg);
+}
+
+.nw{
+  transform: rotate(315deg);
+}
+#curWeather{
+  background-size: cover;
+}
 
 
 /* 3. Mobile First Rules */
@@ -135,7 +161,32 @@ color: red;
 #blueFont{
 color: blue;
 }
+#dial{
+  height: 100px;
+  margin-bottom: 40px;
+}
+#summaryPhoto{
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+.clear{background-image: url(/Week8/weather-images/clear250Sm.jpg);
 
+}
+.fog{background-image: url(/Week8/weather-images/fog250Sm.jpg);
+
+}
+.snow{background-image: url(/Week8/weather-images/snow250Sm.jpg);
+
+}
+.rain{background-image: url(/Week8/weather-images/rain250Sm.jpg);
+
+}
+.clouds{background-image: url(/Week8/weather-images/clouds250Sm.jpg);
+
+}
 /*  4.  Large Screen Styles (Media Queries begin here)
 *
 * ****************************** */
@@ -180,7 +231,38 @@ color: blue;
       height: 350px;
       width: 350px;
     }
-   
+    #dial {
+      height: 150px;
+      width: 150px;
+    }
+  
+    #mph{
+      margin-top: 0px;
+      margin-bottom: 80px;
+    }
+  
+    #summaryPhoto {
+      height: 300px;
+      width: 300px;
+      margin-left: 25px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+    }
+    .clear{background-image: url(/Week8/weather-images/clear400Md.jpg);
+
+    }
+    .fog{background-image: url(/Week8/weather-images/fog400Md.jpg);
+
+    }
+    .snow{background-image: url(/Week8/weather-images/snow400Md.jpg);
+
+    }
+    .rain{background-image: url(/Week8/weather-images/rain400Md.jpg);
+
+    }
+    .clouds{background-image: url(/Week8/weather-images/clouds400Md.jpg);
+
+    }
 /*end scroll bar*/
 }
 
