@@ -75,8 +75,7 @@ function windDial(direction) {
             break;
     }
 }
-changesSummaryImage(condition);
-//chang summary image
+
 function getCondition(condition) {
     const weatherCondition = document.getElementById("weatherCondition");
     console.log(condition);
@@ -133,3 +132,26 @@ function getCondition(condition) {
 //     }
 // }
 
+
+// change the summary image
+function changeSummaryImage(condition) {
+    const summaryPhoto = document.getElementById("summaryPhoto");
+    console.log(condition);
+    switch (condition) {
+        case "Clear":
+            summaryPhoto.setAttribute("class", "clear");
+            break;
+        case "Snow":
+            summaryPhoto.setAttribute("class", "snow");
+            break;
+        case "Rain":
+            summaryPhoto.setAttribute("class", "rain");
+            break;
+        case "Clouds":
+            summaryPhoto.setAttribute("class", "clouds");
+            break;
+        case "Fog":
+            summaryPhoto.setAttribute("class", "fog");
+            break;
+    }
+}
