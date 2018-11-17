@@ -75,7 +75,8 @@ function windDial(direction) {
             break;
     }
 }
-
+changesSummaryImage(condition);
+//chang summary image
 function getCondition(condition) {
     const weatherCondition = document.getElementById("weatherCondition");
     console.log(condition);
