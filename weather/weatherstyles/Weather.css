@@ -163,7 +163,7 @@ color: blue;
 }
 #dial{
   height: 100px;
-  margin-bottom: 100px;
+  margin-bottom: -80px;
 }
 #mph{
   margin-top: 20px;
