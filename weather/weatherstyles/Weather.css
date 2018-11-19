@@ -61,9 +61,6 @@ list-style-type: none;
 }
 
 #dial {
-  height: 150px;
-  width: 150px;
-  background: no-repeat center/60% url('/Week8/weather-images/wind-pointer.png');
   z-index: 100;
   margin: -.6em auto 0;
   margin-bottom: -80px;
@@ -163,6 +160,7 @@ color: blue;
 }
 #dial{
   height: 100px;
+  background: no-repeat center/35% url('/Week8/weather-images/wind-pointer.png');
   margin-bottom: -80px;
 }
 #mph{
@@ -238,6 +236,7 @@ color: blue;
     #dial {
       height: 150px;
       width: 150px;
+      background: no-repeat center/100% url('/Week8/weather-images/wind-pointer.png');
     }
   
     #mph{
