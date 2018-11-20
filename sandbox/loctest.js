@@ -20,12 +20,10 @@ function getGeoLocation(){
          // Combine the values
          const LOCALE = LAT + "," + LONG;
          console.log(`Lat and Long are: ${LOCALE}.`);
-
-         // Call getCode function, send locale
-         getCode(LOCALE);
+      
       
         })
-        else {
+       } else {
         STATUS.innerHTML = "Your browser doesn't support Geolocation or it is not enabled!";
        } // end else
       } //end getGeoLocation
