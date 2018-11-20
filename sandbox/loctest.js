@@ -25,7 +25,7 @@ function getGeoLocation(){
          getCode(LOCALE);
       
         })
-       } else {
+        else {
         STATUS.innerHTML = "Your browser doesn't support Geolocation or it is not enabled!";
        } // end else
       } //end getGeoLocation
