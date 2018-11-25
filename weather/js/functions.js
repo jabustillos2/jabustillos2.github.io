@@ -10,6 +10,11 @@ buildWC(speed,temp);
 const direction = "N"; //Set your own value
 windDial(direction);
 
+const condition = "Mist";
+let currentCondition = getCondition(condition);
+
+changeSummaryImage(currentCondition);
+
 /* calculate windchill*/
 
 function buildWC(speed, temp) {
@@ -79,21 +84,24 @@ function windDial(direction) {
 function getCondition(condition) {
     const weatherCondition = document.getElementById("weatherCondition");
     console.log(condition);
-    if ((condition.includes("Clear")) || (condition.includes("Sunny"))){
-        return "Clear";
+    if ((condition.includes("Clear")) || (condition.includes("Sunny")) || (condition.includes('clear')) || (condition.includes('sunny'))){
+        condition = "Clear";
     }
-    else if ((condition.includes("Snow")) || (condition.includes("Flurries"))){
-        return "Snow";
+    else if ((condition.includes("Snow")) || (condition.includes("Flurries")) || (condition.includes('snow')) || (condition.includes('flurries'))){
+        condition = "Snow";
     }
-    else if ((condition.includes("Rain")) || (condition.includes("Showers")) || (condition.includes("Sprinkle")) || (condition.includes("Thunderstorm"))){
-        return "Rain";
+    else if ((condition.includes("Rain")) || (condition.includes("Showers")) || (condition.includes("Sprinkle")) || (condition.includes("Thunderstorm")) || (condition.includes("rain")) || (condition.includes("showers")) || (condition.includes("sprinkle")) || (condition.includes("thunderstorm"))){
+        condition = "Rain";
     }
-    else if ((condition.includes("Fog")) || (condition.includes("Dew")) || (condition.includes("Mist"))){
-        return "Fog"
+    else if ((condition.includes("Fog")) || (condition.includes("Dew")) || (condition.includes("Mist")) || (condition.includes('fog')) || (condition.includes('dew')) || (condition.includes('mist'))){
+        condition = "Fog"
     }
-    else {
-        return "Clouds"
+    else if ((condition.includes('Partly Cloudy')) || (condition.includes('Overcast')) || (condition.includes('Partly Sunny')) || (condition.includes('partly cloudy')) || (condition.includes('overcast')) || (condition.includes('partly sunny'))){
+        condition = "Clouds"
     }
+    console.log(condition);
+    weatherCondition.innerHTML=condition;
+    return condition;
 }
 
 
