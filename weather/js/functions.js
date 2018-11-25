@@ -22,19 +22,19 @@ function buildWC(speed, temp) {
 
     /*compute Windchill*/
     let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-console.log(wc);
+    console.log(wc);
 
     /*round down integer*/
     wc=Math.floor(wc);
     
 /* If chill is greater than temp, return the temp*/
-wc = (wc > temp)?temp:wc;
+    wc = (wc > temp)?temp:wc;
 
 /*display windchill*/
-console.log(wc);
+    console.log(wc);
 
 /* wc='feels like ' + wc+'F';*/
-feelTemp.innerHTML = wc;
+    feelTemp.innerHTML = wc;
 }
 
 // Wind Dial Function
