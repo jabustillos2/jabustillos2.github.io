@@ -11,6 +11,14 @@
 /*  1.2 Google fonts*
 
 /* 2. General Style Rules*/
+#curWeather {
+  background-size: cover;
+ }
+ 
+ /* Background pictures for summary */
+ .clear {
+  background-image: url("/weather/images/clear_small.jpg");
+ }
 html {
   box-sizing: border-box;
  }
