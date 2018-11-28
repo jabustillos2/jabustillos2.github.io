@@ -52,3 +52,28 @@ function getCode(LOCALE) {
   } // end getCode function
       // URL to request city data using latitude and longitude
       // http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&q=43.816667%2C-111.783333&details=false&toplevel=false"
+
+      //http://dataservice.accuweather.com/currentconditions/v1/332634?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&details=true"
+      // Get Current Weather data from API
+function getWeather(locData) {
+    const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
+    const CITY_CODE = locData['key']; // We're getting data out of the object
+    const URL = "http://dataservice.accuweather.com/currentconditions/v1/332634?apikey="+CITY_CODE+"?apikey="+API_KEY+"&details=true";
+    fetch(URL)
+     .then(response => response.json())
+     .then(function (data) {
+      console.log('Json object from getWeather function:');
+      console.log(data); // Let's see what we got back
+      // Start collecting data and storing it
+      locData['currentTemp'] = data[0].Temperature.Imperial.Value;
+      locData['summary'] = data[0].WeatherText;
+      locData['windSpeed'] = data[0].Wind.Speed.Imperial.Value;
+      locData['windUnit'] = data[0].Wind.Speed.Imperial.Unit;
+      locData['windDirection'] = data[0].Wind.Direction.Localized;
+      locData['windGust'] = data[0].WindGust.Speed.Imperial.Value;
+      locData['pastLow'] = data[0].TemperatureSummary.Past12HourRange.Minimum.Imperial.Value;
+      locData['pastHigh'] = data[0].TemperatureSummary.Past12HourRange.Maximum.Imperial.Value;
+      getHourly(locData); // Send data to getHourly function
+      })
+     .catch(error => console.log('There was an error: ', error))
+  } // end getWeather function
