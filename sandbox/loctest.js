@@ -30,3 +30,4 @@ function getGeoLocation(){
       } //end getGeoLocation
 
       // URL to request city data using latitude and longitude
+      // http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&q=43.816667%2C-111.783333&details=false&toplevel=false"
