@@ -28,3 +28,5 @@ function getGeoLocation(){
         STATUS.innerHTML = "Your browser doesn't support Geolocation or it is not enabled!";
        } // end else
       } //end getGeoLocation
+
+      // URL to request city data using latitude and longitude
