@@ -62,7 +62,6 @@ function getWeather(locData) {
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
     const CITY_CODE = locData['key']; // We're getting data out of the object
     const URL = "http://dataservice.accuweather.com/currentconditions/v1/332634?apikey="+CITY_CODE+"?apikey="+API_KEY+"&details=true";
-    const TEMP = data[0].Temperature.Imperial.Value
     fetch(URL)
      .then(response => response.json())
      .then(function (data) {
