@@ -16,7 +16,7 @@ function getGeoLocation(){
         navigator.geolocation.getCurrentPosition(function (position) {
          const LAT = position.coords.latitude;
          const LONG = position.coords.longitude;
-      
+         
          // Combine the values
          const LOCALE = LAT + "," + LONG;
          console.log(`Lat and Long are: ${LOCALE}.`);
@@ -33,6 +33,7 @@ function getGeoLocation(){
 function getCode(LOCALE) {
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
     const URL = 'http:dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey='+API_KEY+'&q='+LOCALE;
+    const TEMP = data[0].Temperature.Imperial.Value
     fetch(URL)
      .then(response => response.json())
      .then(function (data) {
@@ -52,6 +53,8 @@ function getCode(LOCALE) {
   } // end getCode function
       // URL to request city data using latitude and longitude
       // http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&q=43.816667%2C-111.783333&details=false&toplevel=false"
+
+
 
       //http://dataservice.accuweather.com/currentconditions/v1/332634?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&details=true"
       // Get Current Weather data from API
