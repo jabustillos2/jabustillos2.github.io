@@ -291,3 +291,4 @@ function getHourly(locData) {
       })
       .catch(error => console.log('There was an error: ', error))
   } // end getHourly function
+  function buildPage(locData);
