@@ -81,7 +81,7 @@ function getWeather(locData) {
   // Get next 12 hours of forecast data from API
 function getHourly(locData) {
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
-    const CITY_CODE = locData['key'];
+    const CITY_CODE = locData['332634'];
     const URL = "https://dataservice.accuweather.com/forecasts/v1/hourly/12hour/"+CITY_CODE+"?apikey="+API_KEY;
     fetch(URL)
       .then(response => response.json())
