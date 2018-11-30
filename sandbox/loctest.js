@@ -3,6 +3,7 @@ location and populate a web pg with data*/
 
 'use strict';
 // Call the function to get our location
+getGeoLocation();
 // Gets longitude and latitude of current location
 function getGeoLocation(){
     const STATUS = document.getElementById('status');
@@ -55,7 +56,7 @@ function getCode(LOCALE) {
       // Get Current Weather data from API
 function getWeather(locData) {
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
-    const CITY_CODE = locData['332634']; // We're getting data out of the object
+    const CITY_CODE = locData['key']; // We're getting data out of the object
     const URL = "http://dataservice.accuweather.com/currentconditions/v1/="+CITY_CODE+"?apikey="+API_KEY+"&details=true";
     const TEMP = data[0].Temperature.Imperial.Value;
     // const TEMP = data[0]['Temperature']['Imperial']['Value'];
