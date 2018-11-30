@@ -1,7 +1,7 @@
 /*functions will work together to get weather info for current
 location and populate a web pg with data*/
 
-'use strict';
+/*'use strict';
 // Call the function to get our location
 getGeoLocation();
 // Gets longitude and latitude of current location
@@ -125,4 +125,4 @@ function getHourly(locData) {
       buildPage(locData); // Send data to buildPage function
       })
       .catch(error => console.log('There was an error: ', error))
-  } // end getHourly function
+  } // end getHourly function*/
