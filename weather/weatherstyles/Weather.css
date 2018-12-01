@@ -101,79 +101,82 @@ list-style-type: none;
 
 /* 3. Mobile First Rules */
 nav {
-position: fixed;
-bottom: 0;
-left: 0;
-background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
 }
 
 nav ul {
-display: flex;
+  display: flex;
 }
 
 
 nav ul li { 
-margin-right: 7px;
-list-style: none;
+  margin-right: 7px;
+  list-style: none;
 }
 
 
 footer{
-margin-bottom: 3em;
+  margin-bottom: 3em;
+ }
+
+ #locInfo>p{
+    text-align: justify;
+    font-size: 0.9em;
+ }
+
+ #curWeather{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
 }
 
-#locInfo>p{
-  text-align: justify;
-  font-size: 0.9em;
-}
-
-#curWeather{
-text-align: center;
-display:flex;
-flex-direction: column;
-}
-
-.tile{
-background-color: rgba(128, 154, 184, 0.6);
-margin: .2em auto;
-border: 1px solid;
-border-radius: 15px;
-width: 200px;
-height: 200px;
+ .tile{
+  background-color: rgba(200,200,200,.6);
+  margin: .2em auto;
+  border: 1px solid;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
 }
 
 .hide{
-  display: none;
+    display: none;
 }
 
 #dailyTemp{
-font-size: 5em;
-margin: 0px;
+  font-size: 5em;
+  margin: 0px;
 }
 
 #redFont{
-color: red;
+  color: red;
 }
 
 #blueFont{
-color: blue;
+  color: blue;
 }
-#dial{
+
+#dial {
   height: 100px;
-  background: no-repeat center/35% url('/Week8/weather-images/wind-pointer.png');
-  margin-bottom: -80px;
+  width: 100px;
 }
+
 #mph{
   margin-top: 20px;
   margin-bottom: 40px;
 }
-#summaryPhoto{
+#summaryPhoto {
   height: 150px;
   width: 150px;
   margin-left: 25px;
   margin-top: -10px;
   margin-bottom: 25px;
 }
+/* background: no-repeat center/35% url('/Week8/weather-images/wind-pointer.png');*/
+
 .clear{background-image: url(/Week8/weather-images/clear250Sm.jpg);
 
 }
@@ -189,68 +192,66 @@ color: blue;
 .clouds{background-image: url(/Week8/weather-images/clouds250Sm.jpg);
 
 }
-/*  4.  Large Screen Styles (Media Queries begin here)
-*
-* ****************************** */
+/* Large Screen Rules*/
 @media screen and (min-width: 750px){
-  /*All large screen css rules go here */
-  body{
-    margin: 0px 50px;
+  /* All large screen css rules go here */
+body{
+  margin: 0px 50px;
+}
+
+  nav {
+    position: unset;
   }
-  
-    nav {
-      position: unset;
-    }
-  
-    nav ul {
-      border-style: solid;
-      border-color: black; 
-      border-width: 1px;  
-      width: 950px;
-    } 
-  
-    nav ul li {
-      padding: 10px;
-    }
-  
-    nav ul li:nth-child(2) {
-      border-right: 1px solid black;
-    }
-  
-    #curWeather{
-      flex-direction: row;
-      border-style: solid;
-      border-color: black; 
-      border-width: 1px; 
-      padding: 30px 0px;
-    }
-  
-    .hide{
-      display:block;
+
+  nav ul {
+    border-style: solid;
+    border-color: black; 
+    border-width: 1px;  
+    width: 950px;
+  } 
+
+  nav ul li {
+    padding: 10px;
   }
-  
-    .tile{
-      height: 350px;
-      width: 350px;
-    }
-    #dial {
-      background: no-repeat center/85% url(/Week8/weather-images/wind-pointer.png);
-      height: 150px;
-      width: 150px;
-    }
-  
-    #mph{
-      margin-top: 0px;
-      margin-bottom: 80px;
-    }
-  
-    #summaryPhoto {
-      height: 300px;
-      width: 300px;
-      margin-left: 25px;
-      margin-top: -10px;
-      margin-bottom: 25px;
-    }
+
+  nav ul li:nth-child(2) {
+    border-right: 1px solid black;
+  }
+
+  #curWeather{
+    flex-direction: row;
+    border-style: solid;
+    border-color: black; 
+    border-width: 1px; 
+    padding: 30px 0px;
+  }
+
+  .hide{
+    display:block;
+}
+
+  .tile{
+    height: 350px;
+    width: 350px;
+  }
+
+  #dial {
+    height: 150px;
+    width: 150px;
+  }
+
+  #mph{
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+
+  #summaryPhoto {
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
     .clear{background-image: url(/Week8/weather-images/clear400Md.jpg);
 
     }
