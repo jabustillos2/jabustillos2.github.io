@@ -60,19 +60,22 @@ list-style-type: none;
   border-right: none;
 }
 
-
 #dial {
+  background: no-repeat center/85% url(/Week8/weather-images/wind-pointer.png);
   z-index: 100;
   margin: -.6em auto 0;
   margin-bottom: -80px;
  }
- .n {
-   transform: rotate(0deg);
- }
- .ne{
-   transform: rotate(45deg);
- }
- .e{
+
+.n {
+  transform: rotate(0deg);
+}
+
+.ne{
+  transform: rotate(45deg);
+}
+
+.e{
   transform: rotate(90deg);
 }
 
@@ -95,9 +98,14 @@ list-style-type: none;
 .nw{
   transform: rotate(315deg);
 }
-#curWeather{
+
+#curWeather {
   background-size: cover;
-}
+ }
+
+ .hide{
+   display:none;
+ }
 
 /* 3. Mobile First Rules */
 nav {
