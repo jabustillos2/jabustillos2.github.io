@@ -292,3 +292,7 @@ function getHourly(locData) {
       .catch(error => console.log('There was an error: ', error))
   } // end getHourly function
   function buildPage(locData);
+  const STATUS = document.getElementById('status');
+  STATUS.innerHTML = 'Getting Location...';
+  const LAT = position.coords.latitude;
+   const LONG = position.coords.longitude;
