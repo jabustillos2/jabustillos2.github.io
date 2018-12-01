@@ -213,11 +213,11 @@ function getCode(LOCALE) {
      .catch(error => console.log('There was a getCode error: ', error))
   } // end getCode function
       // URL to request city data using latitude and longitude
-      // http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&q=43.816667%2C-111.783333&details=false&toplevel=false"
+      // https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&q=43.816667%2C-111.783333&details=false&toplevel=false"
 
 
 
-      //http://dataservice.accuweather.com/currentconditions/v1/332634?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&details=true"
+      //https://dataservice.accuweather.com/currentconditions/v1/332634?apikey=2gUfqbpCyXDXEIku467zvS4vMg0HHxeb&details=true"
       // Get Current Weather data from API
 function getWeather(locData) {
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
