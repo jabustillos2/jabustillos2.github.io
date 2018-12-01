@@ -98,10 +98,6 @@ list-style-type: none;
 #curWeather{
   background-size: cover;
 }
-.hide{
-  display: none;
-}
-
 
 /* 3. Mobile First Rules */
 nav {
