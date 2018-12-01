@@ -72,7 +72,9 @@ list-style-type: none;
   z-index: 100;
   margin: -.6em auto 0;
   margin-bottom: -80px;
+  background: no-repeat center/35% url('/Week8/weather-images/wind-pointer.png');
  }
+
  .n {
    transform: rotate(0deg);
  }
@@ -171,7 +173,6 @@ color: blue;
 }
 #dial{
   height: 100px;
-  background: no-repeat center/35% url('/Week8/weather-images/wind-pointer.png');
   margin-bottom: -80px;
 }
 #mph{
