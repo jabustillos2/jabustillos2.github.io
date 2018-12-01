@@ -2,62 +2,49 @@
 <html lang="en-us">
  <head>
      <!--Jacob Bustillos, Laura dube', zane pace, brandon-->
-  <meta charset="UTF-8">
-  <title>Conditions | Weather Temp.</title>
-  <meta name="description" content="weather data">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="/weather/weatherstyles/Weather.css" media="screen"></head>
- <body>  
-        <header id= page-header>
-                <h1>&#9748;The Weather Site</h1>
-        </header>
-                
-                <nav>
-                        <p id="status"></p>
-                  <ul>
-                   <li><a href="/index.html" title="Go to home page">Home</a></li>
-                   <li><a href="/weather/franklinweather.html">Franklin, ID</a></li>
-                   <li><a href="/weather/greenville.html">Greenvile, SC</a></li>
-                   <li><a href="a">Springfield</a></li>
-                   <li><a href="a">Search</a></li>
-                  </ul>
-                </nav>
-       
-                <p id="status"></p>
-                <main class="hide">
-                   <section class="head">
-                      <h2 id="locName">Franklin, Idaho</h2>
-                      <div id="demographics">
-                         <p><b>Zip:</b> <span id="locZip"></span></p>
-                         <p><b>Elevation:</b> <span id="elevation"></span></p>
-                         <p><b>Location:</b> <span id="geoLoc"></span></p>
-                      </div>
-                   </section>
-                          
-                                <div id="curWeather"class="fog">
-                                    <section id="temps" class="tile">
-                                    <h3 class="hide">Temperature</h3>
-                                    <p id="dailyTemp">55° F</p>
-                                    <p><span id="redFont">64&deg;F</span> <span id="blueFont">41&deg;C</span></p> <!-- change color to red and blue-->
-                                    <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
-                                </section>
-            
-                                <section id="wind" class="tile">
-                                    <h3 class="hide"> Wind</h3>
-                                    <p>N</p>
-                                    <div id="dial" class="n"></div>
-                                    <p id="mph">2 mph</p>
-                                    <p><span class="bold" >Direction:</span> SW</p> 
-                                    <p><span class="bold" >Gusts:</span> <span id="gusts">5</span>mph</p>
-                                </section>
-            
-                                <section id="summary" class="tile">
-                                    <h3 id= "weatherCondition">Fog</h3>
-                                    <div id="summaryPhoto" class="fog"></div>
-                                </section>
-                            </div>
+     <header id=page-header>
+        <h1>&#9748;The Weather Site</h1>
+</header>
+    <body>
+        <nav>
+            <ul> 
+             <li><a href="/weather/index.html" title="Current Weather"> Current</a></li>
+             <li><a href="" title="Search"> Search</a></li>   
+             <li><a href="/weather/franklin.html" title="Go to Franklin"> Franklin, ID</a></li>
+             <li><a href="/weather/greenville.html" title="Go to Greenville"> Greenville, SC</a></li>
+            </ul>
+         </nav>      
+         <p id="status"></p>
+ <main id="main" class="hide">
+        <h1 id ="locName">Current Weather</h1>
+        <section id="locInfo">
+            <p><span class="bold" >Zip: </span> <span id="zip"> 83237 </span> | <span class="bold" >Elevation:</span> <span id="elevation">4968</span> ft. | <span class="bold" >Location:</span> <span id="location">42.07, 111.79</span></p> 
+        </section>
 
+        <div id="curWeather" class="rain">
+            
+            <section id="temps" class="tile">
+                <h3 class="hide">Temperature</h3>
+                <p id="dailyTemp">55° F</p>
+                <p><span id="redFont">64 F</span> <span id="blueFont">41 F</span></p> 
+                <p id="feel">Feels like <span id="feelTemp">??</span>F</p>
+            </section>
 
+            
+            <section class="tile">
+                <h3 class="hide"> Wind</h3>
+                <p>N</p>
+                <div id="dial" class="n"></div>
+                <p id="mph">2 mph</p>
+                <p><span class="bold" >Direction:</span> <span id="direction">SW</span></p> 
+                <p><span class="bold" >Gusts:</span> <span id="gusts">5</span>mph</p>
+            </section>
+
+            <section id="summary" class="tile">
+                <h3 id="weatherCondition">Rain</h3>
+                <div id="summaryPhoto" class="rain"></div>
+            </section>
+        </div>
             <section id="hourly">
                         <h4>Hourly Forecast</h4>
                             <ul>
