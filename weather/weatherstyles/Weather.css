@@ -11,14 +11,6 @@
 /*  1.2 Google fonts*
 
 /* 2. General Style Rules*/
-#curWeather {
-  background-size: cover;
- }
- 
- /* Background pictures for summary */
- .clear {
-  background-image: url("/weather/images/clear_small.jpg");
- }
 html {
   box-sizing: border-box;
  }
@@ -68,6 +60,7 @@ list-style-type: none;
   border-right: none;
 }
 
+
 #dial {
   z-index: 100;
   margin: -.6em auto 0;
@@ -105,7 +98,9 @@ list-style-type: none;
 #curWeather{
   background-size: cover;
 }
-
+.hide{
+  display: none;
+}
 
 
 /* 3. Mobile First Rules */
@@ -243,9 +238,9 @@ color: blue;
       width: 350px;
     }
     #dial {
+      background: no-repeat center/85% url(/Week8/weather-images/wind-pointer.png);
       height: 150px;
       width: 150px;
-      background: no-repeat center/100% url('/Week8/weather-images/wind-pointer.png');
     }
   
     #mph{
