@@ -291,27 +291,47 @@ function getHourly(locData) {
       })
       .catch(error => console.log('There was an error: ', error))
   } // end getHourly function
-  // apply the data to the website
-function buildPage(locData) {
-   buildWC(locData.windSpeed, locData.currentTemp);
-   windDial(locData.windDirection);
-   changeSummaryImage(getCondition(locData.summary));
-   buildHourly(locData);
-   document.getElementById("locName").innerHTML = `${locData.name}, ${locData.stateAbbr}`;
-   document.title =  `${locData.name}, ${locData.stateAbbr} | jabustillos2.githun.io`;
-   document.getElementById("elevation").innerHTML = locData.elevation;
-   document.getElementById("locZip").innerHTML = locData.postal;
-   document.getElementById("geoLoc").innerHTML = locData.geoposition;
-   document.getElementById("currentTemp").innerHTML = locData.currentTemp;
-   document.getElementById("highTemp").innerHTML = locData.pastHigh;
-   document.getElementById("lowTemp").innerHTML = locData.pastLow;
-   document.getElementById("windSpeed").innerHTML = locData.windSpeed;
-   document.getElementById("gustSpeed").innerHTML = locData.windGust;
-   document.getElementById("summary").innerHTML = locData.summary;
 
-   document.getElementById("status").className = "hide";
-   document.getElementsByTagName("main")[0].className = "";
-} // end buildPage function
+  function buildPage(locData)
+  {
+    // Task 1 - Feed data to WC, Dial and Image functions
+    //variables
+    const temp = locData.currentTemp;
+    const speed = locData.windSpeed;
+    const condition=locData.summary;
+    const direction= locData.windDirection; 
+    //call functions
+    buildWC(speed, temp);
+    windDial(direction);
+    getCondition(condition);
+    let currentCondition = getCondition(condition); 
+    console.log(currentCondition);
+    changeSummaryImage(currentCondition);
+    changeBackgroundImage(currentCondition);
+    
+    // Task 2 - Populate location information
+    document.getElementById('zip').innerHTML = locData.postal
+    document.getElementById('elevation').innerHTML = locData.elevation;
+    document.getElementById('location').innerHTML = locData.geoposition;
+    document.getElementById('locName').innerHTML = locData.name + ", " + locData.stateAbbr;
+    document.getElementById('titleElement').innerHTML = locData.name + ", " + locData.stateAbbr + " | Weather Site";
+
+    // Task 3 - Populate weather information
+    document.getElementById('dailyTemp').innerHTML = temp + "°F";
+    document.getElementById('redFont').innerHTML = locData.pastHigh + "F";
+    document.getElementById('blueFont').innerHTML = locData.pastLow + "F";
+    document.getElementById('mph').innerHTML = speed + " mph";
+    document.getElementById('direction').innerHTML = locData.windDirection;
+    document.getElementById('gusts').innerHTML = locData.windGust;
+    document.getElementById('weatherCondition').innerHTML = condition;
+
+    // Task 4 - Hide status and show main
+    document.getElementById('main').addEventListener('load', changeHiddenClass());
+    function changeHiddenClass() {
+        document.getElementById('status').classList.add('hide');
+        document.getElementById('main').classList.remove('hide');
+  }
+}
 
 // formats a value into a 12h AM/PM time string
 function format_time(hour) {
