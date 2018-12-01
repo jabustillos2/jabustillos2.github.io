@@ -291,8 +291,55 @@ function getHourly(locData) {
       })
       .catch(error => console.log('There was an error: ', error))
   } // end getHourly function
-  function buildPage(locData);
-  const STATUS = document.getElementById('status');
-  STATUS.innerHTML = 'Getting Location...';
-  const LAT = position.coords.latitude;
-   const LONG = position.coords.longitude;
+  // apply the data to the website
+function buildPage(locData) {
+   buildWC(locData.windSpeed, locData.currentTemp);
+   windDial(locData.windDirection);
+   changeSummaryImage(getCondition(locData.summary));
+   buildHourly(locData);
+   document.getElementById("locName").innerHTML = `${locData.name}, ${locData.stateAbbr}`;
+   document.title =  `${locData.name}, ${locData.stateAbbr} | loganes1.github.io`;
+   document.getElementById("elevation").innerHTML = locData.elevation;
+   document.getElementById("locZip").innerHTML = locData.postal;
+   document.getElementById("geoLoc").innerHTML = locData.geoposition;
+   document.getElementById("currentTemp").innerHTML = locData.currentTemp;
+   document.getElementById("highTemp").innerHTML = locData.pastHigh;
+   document.getElementById("lowTemp").innerHTML = locData.pastLow;
+   document.getElementById("windSpeed").innerHTML = locData.windSpeed;
+   document.getElementById("gustSpeed").innerHTML = locData.windGust;
+   document.getElementById("summary").innerHTML = locData.summary;
+
+   document.getElementById("status").className = "hide";
+   document.getElementsByTagName("main")[0].className = "";
+} // end buildPage function
+
+// formats a value into a 12h AM/PM time string
+function format_time(hour) {
+   if (hour > 23) {
+      hour -= 24;
+   }
+   let amPM = (hour > 11) ? "pm" : "am";
+   if (hour > 12) {
+      hour -= 12;
+   } else if (hour == 0) {
+      hour = "12";
+   }
+   return hour + amPM;
+} // end format_time function
+
+function buildHourly(locData) {
+   //const hourlyTime = document.getElementById("forecast").children[1];
+   const hourlyTime = document.createElement("ul");
+   console.log(hourlyTime);
+
+   const currentHour = new Date().getHours();
+   console.log(currentHour);
+
+   for (let i = 0; i < 12; i++) {
+      const newHour = document.createElement('li');
+      newHour.innerHTML = `${format_time(currentHour - i)}: ${locData["hourTemp" + (i + 1)]}&deg;F`;
+      hourlyTime.appendChild(newHour);
+   }
+   console.log(hourlyTime);
+   const forecast = document.getElementById("forecast");
+   forecast.replaceChild(hourlyTime, forecast.children[1]);
