@@ -196,19 +196,19 @@ function getCode(LOCALE) {
     const URL = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey='+API_KEY+'&q='+LOCALE;
     
     fetch(URL)
-     .then(response => response.json())
-     .then(function (data) {
-      console.log('Json object from getCode function:');
-      console.log(data);
-      const locData = {}; // Create an empty object
-      locData['key'] = data.Key; // Add the value to the object
-      locData['name'] = data.LocalizedName;
-      locData['postal'] = data.PrimaryPostalCode;
-      locData['state'] = data.AdministrativeArea.LocalizedName;
-      locData['stateAbbr'] = data.AdministrativeArea.ID;
-      locData['geoposition'] = LOCALE;
-      locData['elevation'] = data.GeoPosition.Elevation.Imperial.Value;
-      getWeather(locData);
+      .then(response => response.json())
+      .then(function (data) {
+         console.log('Json object from getCode function:');
+         console.log(data);
+         const locData = {}; // Create an empty object
+         locData['key'] = data.Key; // Add the value to the object
+         locData['name'] = data.LocalizedName;
+         locData['postal'] = data.PrimaryPostalCode;
+         locData['state'] = data.AdministrativeArea.LocalizedName;
+         locData['stateAbbr'] = data.AdministrativeArea.ID;
+         locData['geoposition'] = LOCALE;
+         locData['elevation'] = data.GeoPosition.Elevation.Imperial.Value;
+         getWeather(locData);
       })
      .catch(error => console.log('There was a getCode error: ', error))
   } // end getCode function
