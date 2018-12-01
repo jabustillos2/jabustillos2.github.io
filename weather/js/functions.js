@@ -343,3 +343,4 @@ function buildHourly(locData) {
    console.log(hourlyTime);
    const forecast = document.getElementById("forecast");
    forecast.replaceChild(hourlyTime, forecast.children[1]);
+}
