@@ -298,7 +298,7 @@ function buildPage(locData) {
    changeSummaryImage(getCondition(locData.summary));
    buildHourly(locData);
    document.getElementById("locName").innerHTML = `${locData.name}, ${locData.stateAbbr}`;
-   document.title =  `${locData.name}, ${locData.stateAbbr} | loganes1.github.io`;
+   document.title =  `${locData.name}, ${locData.stateAbbr} | jabustillos2.githun.io`;
    document.getElementById("elevation").innerHTML = locData.elevation;
    document.getElementById("locZip").innerHTML = locData.postal;
    document.getElementById("geoLoc").innerHTML = locData.geoposition;
