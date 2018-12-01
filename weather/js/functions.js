@@ -296,7 +296,7 @@ function buildPage(locData) {
    buildWC(locData.windSpeed, locData.currentTemp);
    windDial(locData.windDirection);
    changeSummaryImage(getCondition(locData.summary));
-   Hourly(locData);
+   buildHourly(locData);
    document.getElementById("locName").innerHTML = `${locData.name}, ${locData.stateAbbr}`;
    document.title =  `${locData.name}, ${locData.stateAbbr} | loganes1.github.io`;
    document.getElementById("elevation").innerHTML = locData.elevation;
