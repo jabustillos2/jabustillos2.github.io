@@ -254,6 +254,7 @@ function getHourly(locData) {
     const speed = locData.windSpeed;
     const condition=locData.summary;
     const direction= locData.windDirection; 
+    console.log(locData.windDirection);
     //call functions
     buildWC(speed, temp);
     windDial(direction);
