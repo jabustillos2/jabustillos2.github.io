@@ -15,6 +15,9 @@ MENULINK.addEventListener('click', function (evt) {
  console.log(stateName);
  if(cityName != null){
  evt.preventDefault();
+
+ let LOCALE=cityName;
+ getData(LOCALE);
  }
 
 });
