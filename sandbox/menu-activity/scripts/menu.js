@@ -22,22 +22,22 @@ MENULINK.addEventListener('click', function (evt) {
 
 
 // Get location code from weather.json file
-//function getData(LOCALE) {
-//let URL = "";
-//  fetch(URL)
-//   .then(response => response.json())
-//   .then(function (data) {
-//    console.log('Json object from getCode function:');
-//    console.log(data);
-//    const locData = {}; // Create an object
-//    locData['name'] = ;
-//    locData['postal'] = ;
-//    locData['state'] = ;
-//    locData['geoposition'] = ;
-//    locData['elevation'] = ;
-//    })
-//   .catch(error => console.log('There was a getCode error: ', error))
-//} // end getCode function
+function getData(LOCALE) {
+let URL = "sandbox/scripts/weather.json";
+  fetch(URL)
+   .then(response => response.json())
+   .then(function (data) {
+    console.log('Json object from getCode function:');
+    console.log(data);
+   /* const locData = {}; // Create an object
+    locData['name'] = ;
+    locData['postal'] = ;
+    locData['state'] = ;
+    locData['geoposition'] = ;
+    locData['elevation'] = ;*/
+    })
+   .catch(error => console.log('There was a getCode error: ', error))
+} // end getCode function
 
   // A function for changing a string to TitleCase
   function toTitleCase(str){
