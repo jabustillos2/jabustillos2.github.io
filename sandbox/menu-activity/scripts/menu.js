@@ -3,7 +3,7 @@
  ******************************** */
 
 // Get menu where clicks will occur
-const MENULINK = document.getElementById('page-nav');
+const MENULINK = document.getElementById('page-header');
 
 // Intercept the menu link clicks
 MENULINK.addEventListener('click', function (evt) {
