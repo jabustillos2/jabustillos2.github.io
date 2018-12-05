@@ -20,7 +20,16 @@
              <li><a href="/weather/franklin.html" title="Go to Franklin"> Franklin, ID</a></li>
              <li><a href="/weather/greenville.html" title="Go to Greenville"> Greenville, SC</a></li>
             </ul>
-         </nav>      
+         </nav> 
+         
+         <section>
+            <form method="get" action="https://www.accuweather.com/en/search-locations" id="searchform">
+             <input type="search" name="query" id="query">
+             <input type="submit" name="submit" value="Search" id="send">
+            </form>
+            <div id="searchResults" class=""></div>
+           </section>
+
          <p id="status"></p>
  <main id="main" class="hide">
         <h1 id ="locName">Current Weather</h1>
