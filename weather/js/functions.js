@@ -283,8 +283,8 @@ function getHourly(locData) {
     // Task 4 - Hide status and show main
     document.getElementById('main').addEventListener('load', changeHiddenClass());
     function changeHiddenClass() {
-        document.getElementById('status').classList.add('hide');
-        document.getElementById('main').classList.remove('hide');
+        document.getElementById('status').classList.add('hidden');
+        document.getElementById('main').classList.remove('hidden');
   }
 }
 
