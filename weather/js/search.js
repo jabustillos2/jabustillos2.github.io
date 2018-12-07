@@ -2,7 +2,7 @@
 
 // Get the query element from the DOM
 const QUERY = document.getElementById("query");
-
+const CLICK = document.getElementById("search results");
 // Listen for search entries, get matching locations
 QUERY.addEventListener("keyup", function () {
     let searchValue = QUERY.value;
@@ -38,9 +38,10 @@ function processJSON(searchValue) {
     })  .catch(error => console.log('There was an error: ', error))
   } // ends the processJSON function
 
+
   // Listen for search entries, get matching locations
-QUERY.addEventListener("keyup", function () {
-    let searchValue = QUERY.value;
+CLICK.addEventListener("click", function (evt) {
+    evt.preventDefault():
     // Call the processJSON function to request data and build results
     processJSON(searchValue);
    }); // ends the eventListener
