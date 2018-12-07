@@ -37,3 +37,10 @@ function processJSON(searchValue) {
       searchResults.innerHTML = list;
     })  .catch(error => console.log('There was an error: ', error))
   } // ends the processJSON function
+
+  // Listen for search entries, get matching locations
+QUERY.addEventListener("keyup", function () {
+    let searchValue = QUERY.value;
+    // Call the processJSON function to request data and build results
+    processJSON(searchValue);
+   }); // ends the eventListener
