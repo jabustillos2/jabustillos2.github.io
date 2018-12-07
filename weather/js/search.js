@@ -42,6 +42,5 @@ function processJSON(searchValue) {
   // Listen for search entries, get matching locations
 CLICK.addEventListener("click", function (evt) {
     evt.preventDefault();
-    // Call the processJSON function to request data and build results
-    processJSON(searchValue);
+    
    }); // ends the eventListener
