@@ -45,5 +45,4 @@ CLICK.addEventListener("click", function (evt) {
     processJSON(cityKey);
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
     let URL = "https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + API_KEY + "&q=" + searchValue;
-    }
    }); // ends the eventListener
