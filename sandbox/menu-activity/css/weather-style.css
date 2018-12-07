@@ -182,3 +182,7 @@ margin-top: -.5em;
 		font-size: 4vw;
 	}
 }
+
+.hidden{
+	display: none;
+}
