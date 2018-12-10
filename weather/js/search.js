@@ -1,7 +1,12 @@
+
+/*************************************
+ * JavaScript for Search Bar
+ *************************************/
 'use strict';
 
 // Get the query element from the DOM
 const QUERY = document.getElementById("query");
+
 
 // Listen for search entries, get matching locations
 QUERY.addEventListener("keyup", function () {
@@ -10,20 +15,21 @@ QUERY.addEventListener("keyup", function () {
     processJSON(searchValue);
    }); // ends the eventListener
 
-// get search resuls ID
-const SEARCH = document.getElementById("searchResults")
+// Get searchResults ID
+const SEARCH = document.getElementById("searchResults");
 
-SEARCH.addEventListener("click", function(evt){
-  const key = evt.target.dataset['key'];
-  console.log(evt);
-  console.log(key);
-  if(key != null){
-       evt.preventDefault();
-       getLocationByKey(key);
-  }
-});
+  SEARCH.addEventListener("click", function(evt){
+    const key = evt.target.dataset['key'];
+    console.log(evt);
+    console.log(key);
+    if(key != null){
+         evt.preventDefault();
+         getLocationByKey(key);
+    }
+  });
 
-   // Request data and build the list of matching locations
+
+// Request data and build the list of matching locations
 function processJSON(searchValue) {
     // Get Data from the Autocomplete API
     const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
@@ -50,3 +56,4 @@ function processJSON(searchValue) {
       searchResults.innerHTML = list;
     })  .catch(error => console.log('There was an error: ', error))
   } // ends the processJSON function
+
