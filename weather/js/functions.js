@@ -269,7 +269,7 @@ function getHourly(locData) {
     document.getElementById('elevation').innerHTML = locData.elevation;
     document.getElementById('location').innerHTML = locData.geoposition;
     document.getElementById('locName').innerHTML = locData.name + ", " + locData.stateAbbr;
-    document.getElementById('titleElement').innerHTML = locData.name + ", " + locData.stateAbbr + " | Weather Site";
+    document.getElementById('titleElement').innerHTML = locData.name + ", " + locData.stateAbbr + " | Weather Temp.";
 
     // Task 3 - Populate weather information
     document.getElementById('dailyTemp').innerHTML = temp + "°F";
