@@ -2,13 +2,26 @@
 
 // Get the query element from the DOM
 const QUERY = document.getElementById("query");
-const CLICK = document.getElementById("search results");
+
 // Listen for search entries, get matching locations
 QUERY.addEventListener("keyup", function () {
     let searchValue = QUERY.value;
     // Call the processJSON function to request data and build results
     processJSON(searchValue);
    }); // ends the eventListener
+
+// get search resuls ID
+const SEARCH = document.getElementById("searchResults")
+
+SEARCH.addEventListener("click", function(evt){
+  const key = evt.target.dataset['key'];
+  console.log(evt);
+  console.log(key);
+  if(key != null){
+       evt.preventDefault();
+       getLocationByKey(key);
+  }
+});
 
    // Request data and build the list of matching locations
 function processJSON(searchValue) {
