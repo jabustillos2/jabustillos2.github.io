@@ -50,12 +50,3 @@ function processJSON(searchValue) {
       searchResults.innerHTML = list;
     })  .catch(error => console.log('There was an error: ', error))
   } // ends the processJSON function
-
-
-  // Listen for search entries, get matching locations
-CLICK.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    processJSON(cityKey);
-    const API_KEY = '2gUfqbpCyXDXEIku467zvS4vMg0HHxeb';
-    let URL = "https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + API_KEY + "&q=" + searchValue;
-   }); // ends the eventListener
