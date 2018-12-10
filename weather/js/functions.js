@@ -288,7 +288,7 @@ function getHourly(locData) {
   }
 }
 
-// formats a value into a 12h AM/PM time string
+/* formats a value into a 12h AM/PM time string
 function format_time(hour) {
     if (hour > 23) {
        hour -= 24;
@@ -318,7 +318,7 @@ function format_time(hour) {
     console.log(hourlyTime);
     const forecast = document.getElementById("hourly");
     forecast.replaceChild(hourlyTime, forecast.children[1]);
- }
+ }*/
 
  // Get location info, based on city key, from API
 function getLocationByKey(cityKey) {
